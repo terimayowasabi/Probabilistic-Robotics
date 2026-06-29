@@ -5,6 +5,7 @@
 を参考にしています。
 
 一部実装は上田隆一氏がMITライセンスで公開しているコードを参考・利用しています。
+
 original Repository
 https://github.com/ryuichiueda/LNPR_BOOK_CODES.git
 
