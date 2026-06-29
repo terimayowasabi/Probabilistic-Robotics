@@ -7,7 +7,6 @@
 一部実装は上田隆一氏がMITライセンスで公開しているコードを参考・利用しています。
 
 original Repository　
-
 https://github.com/ryuichiueda/LNPR_BOOK_CODES.git
 
 第１，２，３，４，５，６章の内容理解を目標に取り組んでいます。
