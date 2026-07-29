@@ -77,7 +77,7 @@ class IdealRobot:
         self.poses.append(self.pose)    
         elems += ax.plot([e[0] for e in self.poses],[e[1] for e in self.poses],linewidth=0.5,color="black")
 
-        if  self.sensor and len(self.poses) > 1:
+        if self.sensor and len(self.poses) > 1:
             self.sensor.draw(ax,elems,self.poses[-2])
 
         if self.agent and hasattr(self.agent,"draw"):
@@ -97,7 +97,7 @@ class IdealRobot:
 
     def one_step(self,time_interval):   
         if not self.agent:return   
-        obs = self.sensor.data(self.pose)
+        obs = self.sensor.data(self.pose) if self.sensor else None
         nu, omega = self.agent.decision(obs)
         self.pose = self.state_transition(nu,omega,time_interval,self.pose)
 
