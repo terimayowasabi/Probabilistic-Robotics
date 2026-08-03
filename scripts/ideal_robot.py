@@ -158,7 +158,7 @@ class IdealCamera:
 
     def visible(self,polarpos):
         if polarpos is None:
-            return false
+            return False
 
         return self.distance_range[0] <= polarpos[0] <= self.distance_range[1]\
             and self.direction_range[0] <= polarpos[1] <= self.direction_range[1]\
